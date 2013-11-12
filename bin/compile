@@ -88,5 +88,7 @@ mkdir -p $BUILD_DIR/bin
 cp $BUILDPACK_DIR/bin/fakesu $BUILD_DIR/bin
 cp $BUILDPACK_DIR/bin/sudo $BUILD_DIR/bin
 
+echo "checking if pkg_config returns correctly libvips info"
+echo `pkg-config --libs vips`
 
 exit 0
