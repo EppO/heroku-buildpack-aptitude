@@ -24,7 +24,7 @@ CACHE_DIR=$2
 WGET_BUILD="$(mktmpdir wget)"
 DEBOOTSTRAP_BUILD="$(mktmpdir debootstrap)"
 FAKECHROOT_BUILD="$(mktmpdir fakechroot)"
-DEFAULT_DEB_PACKAGES=""
+DEFAULT_DEB_PACKAGES="libvips-dev"
 
 mkdir -p $BUILD_DIR/.tools/fakechroot
 mkdir -p $CACHE_DIR/.tools/{wget,debootstrap}
